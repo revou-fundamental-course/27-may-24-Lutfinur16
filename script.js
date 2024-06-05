@@ -1,4 +1,9 @@
-alert("hi")
+function replaceName () {
+    let name = prompt("Siapakah nama anda ?", "")
+    document.getElementById("name").innerHTML=name
+}
+
+replaceName();
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('subscribeForm');
