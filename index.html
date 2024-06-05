@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slide Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="icon/icon-utama-1.png" alt="icon-utama-1"><!-- kasih gambar icon -->
+        </div>
+        <div class="nav-ul">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Pilihan Kamar">Pilihan Kamar</a></li>
+                <li><a href="#Informasi">Informasi</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Reservasi">Reservasi</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="Home">
+        <div class="container-hero">
+            <div class="container-opening">
+                <h2>Butuh kos terbaik ?</h2>
+                <h1>Mukidi-Kost Solusinya</h1>
+                <p>Bersih, Aman, Nyaman, dan Fasilitas Terlengkap !</p>
+                <div class="hero-images">
+                    <img src="icon/hero.png" alt="hero">
+                </div>
+            </div>
+
+            <div class="container-contact">
+                <div class="header-contact">
+                <h3>Butuh update informasi ?</h3>
+                <h5>Yuk daftarkan emailmu untuk mendapatkan informasi dan promo terbaru.</h5>
+                </div>
+                <form action="" id="subscribeForm">
+                        <label for="name">Nama :
+                        <input id="name" type="text" name="name"   placeholder="Masukkan nama lengkap anda" required>
+                        </label>
+
+                        <label for="email">Email :
+                        <input id="email" type="email"  name="email" placeholder="Masukkan alamat email anda" required>
+                        </label>
+
+                        <button type="submit" value="submit">Kirim</button> 
+                </form>
+                <div id="message"></div>
+            </div>
+        </div>
+    </section> <!-- bagian utama -->
+
+    <section class="pilihan-kamar" id="Pilihan Kamar">
+        <div class="container">
+            <h2>Pilihan Kamar</h2>
+            <div class="container-kamar">
+                
+                <div class="info-container-kamar"> <!-- tipe A -->
+                    <h2>Tipe A</h2>
+                    <div class="kamar-image">
+                        <img src="kamar/kamar-1.png" alt="kamar-1">
+                    </div>
+                    <div class="bintang">
+                        <img src="icon/star-1.png" alt="star"> <!-- kasih gambar bintang -->
+                        <p>4.8 (25)</p>
+                    </div>
+                    <h3>Rp 1.457.000/bulan</h3>
+                    
+                    <div class="cards-container">
+                        <div class="fasilitas-card"> 
+                            <div class="header-card">
+                                <div class="icon-facility">
+                                    <img src="icon/icon-facility-1.png" 
+                                alt="icon-facility-1">
+                                </div>
+                                <h3>Spesifikasi Kamar</h3>
+                            </div>
+                            <div class="ul">
+                                <ul>
+                                    <li>3 x 4 Meter</li>
+                                    <li>Jendela Besar</li>
+                                    <li>Listrik 1.200</li>
+                                    <li>K. Mandi Dalam</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fasilitas-card">
+                            <div class="header-card">
+                                <div class="icon-facility">
+                                    <img src="icon/icon-facility-2.png" 
+                                alt="icon-facility-2">
+                                </div>
+                                <h3>Fasilitas Kamar</h3>
+                            </div>
+                            <div class="ul">
+                                <ul>
+                                    <li>AC</li>
+                                    <li>Kasur</li>
+                                    <li>Lemari Pakaian</li>
+                                    <li>Meja Belajar</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-container-kamar"> <!-- tipe b -->
+                    <h2>Tipe B</h2>
+                    <div class="kamar-image">
+                        <img src="kamar/kamar-2.png" alt="kamar-2">
+                    </div>
+                    <div class="bintang">
+                        <img src="icon/star-1.png" alt="star"> <!-- kasih gambar bintang -->
+                        <p>4.9 (16)</p>
+                    </div>
+                    <h3>Rp 1.800.000/bulan</h3>
+                    <div class="cards-container">
+                        <div class="fasilitas-card"> 
+                            <div class="header-card">
+                                <div class="icon-facility">
+                                    <img src="icon/icon-facility-1.png" 
+                                alt="icon-facility-1">
+                                </div>
+                                <h3>Spesifikasi Kamar</h3>
+                            </div>
+                            <div class="ul">
+                                <ul>
+                                    <li>4 x 5 Meter</li>
+                                    <li>Jendela Besar</li>
+                                    <li>Listrik 1.200</li>
+                                    <li>K. Mandi Dalam</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fasilitas-card">
+                            <div class="header-card">
+                                <div class="icon-facility">
+                                    <img src="icon/icon-facility-2.png" 
+                                alt="icon-facility-2">
+                                </div>
+                                <h3>Fasilitas Kamar</h3>
+                            </div>
+                            <div class="ul">
+                                <ul>
+                                    <li>AC</li>
+                                    <li>TV 32 Inch</li>
+                                    <li>Kasur</li>
+                                    <li>Lemari Pakaian</li>
+                                    <li>Meja Belajar</li>
+                                    <li>Kursi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- bagian pilihan kamar -->
+
+    <section class="informasi" id="Informasi">
+        <div class="container">
+            <h2>Informasi</h2>
+            <div class="info-card-2">
+                <div class="card-deskripsi">
+                    <h3>Dikelola oleh :</h3>
+
+                    <div class="profil">
+                        <img src="icon/icon-profile.png" alt="icon-profile">
+                        <div class="pemilik-kos">
+                            <h5>Abdul Mukidi</h5>
+                            <h6>Pemilik Kos</h6>
+                        </div>
+                    </div>
+                    <p>Kost ini berlokasi 200 meter dari jalan raya dengan akses yang dapat dilalui oleh mobil, berlokasi 950 m dari Universitas AMIKOM Yogyakarta, 1.2 km dari Universitas Islam Indonesia Kampus Condong Catur. Kos ini dibangun pada tahun 2020 dan sudah memiliki sertifikasi bangunan yang cukup baik.</p>
+                </div>
+
+                <div class="card-deskripsi">
+                    <h3>Peraturan Kos :</h3>
+                    <ul>
+                        <li>Dilarang membawa pasangan lawan jenis.</li>
+                        <li>Maksimal kos untuk 2 orang.</li>
+                        <li>Dilarang membawa hewan peliharaan.</li>
+                        <li>Membawa peralatan elektronik tetentu akan dikenakan biaya tambahan.</li>
+                        <li>Jam malam pukul 23:30.</li>
+                        <li>Wajib menjaga kebersihan.</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section> <!-- bagian informasi -->
+
+
+    <section class="gallery" id="Gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="container-gallery">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="kamar/kamar-1.png" alt="kamar-1"></div>
+                        <div class="slide"><img src="kamar/kamar-2.png" alt="kamar-2"></div>
+                        <div class="slide"><img src="kamar/outdoor-1.png" alt="outdoor-1"></div>
+                        <div class="slide"><img src="kamar/outdoor-2.png" alt="outdoor-2"></div>
+                        <div class="slide"><img src="kamar/outdoor-3.png" alt="outdoor-3"></div>
+                        <div class="slide"><img src="kamar/outdoor-4.png" alt="outdoor-4"></div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section><!-- bagian gallery -->
+
+    <section class="review" id="Review">
+        <div class="container">
+            <h2>Review</h2>
+            <div class="container-review">
+                
+                <div class="review-card">
+                    <div class="star-rating">
+                        <img src="icon/rating-5.png" alt="rating-5">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laudantium, fugit beatae vitae quisquam ipsa rerum itaque deserunt!.</p>
+                    <div class="profil">
+                        <img src="icon/user-profil.png" alt="user-profil">
+                        <div class="profil-nama">
+                            <h6>Marcus Simanjutak</h6>
+                            <div class="tanggal-review">
+                                <p>17/05/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="star-rating">
+                        <img src="icon/rating-4.png" alt="rating-5">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laudantium, fugit beatae vitae quisquam ipsa rerum itaque deserunt!.</p>
+                    <div class="profil">
+                        <img src="icon/user-profil.png" alt="user-profil">
+                        <div class="profil-nama">
+                            <h6>Agung Supriyatna</h6>
+                            <div class="tanggal-review">
+                                <p>02/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" id="Review">
+                    <div class="star-rating">
+                        <img src="icon/rating-5.png" alt="rating-5">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laudantium, fugit beatae vitae quisquam ipsa rerum itaque deserunt!.</p>
+                    <div class="profil">
+                        <img src="icon/user-profil.png" alt="user-profil">
+                        <div class="profil-nama">
+                            <h6>Anonymous</h6>
+                            <div class="tanggal-review">
+                                <p>12/03/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- bagian review -->
+
+
+    <section class="closing" id="Reservasi">
+        <div class="container">
+            <h2>Reservasi</h2>
+                <div class="closing-card">
+                    <div class="image-chat">
+                        <img src="icon/chat.png" alt="image-chat">
+                    </div>
+                    <div class="reservasi">
+                    <h3>Berminat reservasi ? Kamu bisa dengan mudah melakukan proses reservasi langsung ke pemilik kos dengan klik button di bawah ini, dijamin lebih cepat.</h3>
+                    <div class="submit">
+                    <button type="submit">Ajukan Reservasi</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section><!-- bagian closing -->
+
+    <footer >
+        <div class="container">
+            <div class="info-footer">
+            <img src="icon/icon-utama-2.png" alt="icon-utama-2">
+            <p><a href="">Terms of Service </a>| <a href="">Privacy Policy</a></p>
+            <p>&COPY; 2024 Mukidi-Kost All rights Reserved</p>
+            </div>
+        </div>
+    </footer><!-- bagian footer -->
+
+
+
+    <script src="script.js"></script>
+ </body>
+</html>
