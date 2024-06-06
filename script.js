@@ -1,19 +1,26 @@
+// -------------------------Welcome prompt
+
 function replaceName () {
-    let name = prompt("Siapakah nama anda ?", "")
+    let name = prompt("Hai selamat datang, dengan siapa ?", "")
     document.getElementById("name").innerHTML=name
 }
 
 replaceName();
+
+// -------------------------Form
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('subscribeForm');
     const messageDiv = document.getElementById('message');
 
     form.addEventListener('submit', (event) => {
-        event.preventDefault(); // Mencegah form dari reload halaman
+        event.preventDefault(); 
 
         const name = form.name.value.trim();
         const email = form.email.value.trim();
+
+        console.log(`Name: ${name}`);
+        console.log(`Email: ${email}`);
 
         if (name === "" || email === "") {
             messageDiv.textContent = "Please fill in both fields.";
@@ -25,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             messageDiv.textContent = `Terima kasih ${name}, ditunggu ya informasi dari kami!`;
             messageDiv.style.color = "#19B65B";
             form.reset();
+
         }
     });
 
@@ -35,6 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-ul ul');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+
+
+
+
+
+
+
+// ------------------------Slider
 
 let slideIndex = 0;
 

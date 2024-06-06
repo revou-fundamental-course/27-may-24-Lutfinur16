@@ -6,8 +6,10 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0px;
+    z-index: 2;
 }
 
 nav {
@@ -39,7 +41,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    padding: 0 15px;
 }
 
 nav a {
@@ -56,12 +58,27 @@ nav ::after {
     color: #19B65B;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    margin: 4px 0;
+    border-radius: 3px;
+}
+
 
 /* --------------------------- */
 section {
     margin: 50px 0;
     padding: 40px 0;
 } 
+
 .container {
     width: 70%;
     margin: 0 auto;
@@ -77,6 +94,7 @@ section {
 
 /* --------------------------------------------HERO */
 
+
 .container-opening {
     display: flex;
     flex-direction: column;
@@ -91,23 +109,28 @@ section {
     gap: 20px;
     width: 70%;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 
 .container-opening h1 {
-    font-size: 36px;
+    font-size: 1.5rem;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .container-opening h2 {
-    font-size: 28px;
+    font-size: 100%;
+    text-align: center;
     margin: 0;
     padding: 0;
     color: #19B65B;
 }
 
 .container-opening p {
+    font-size: 100%;
+    text-align: center;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -220,19 +243,18 @@ input {
 
 .kamar-image img {
     padding: 0;
-    width: 100% ;
-    height: 100%;
+    width: 90% ;
     border-radius: 8px;
 }
 
 .info-container-kamar h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
 }
 
 .info-container-kamar h3 {
-    font-size: 22px;
+    font-size: 1.35rem;
     font-weight: 600;
     margin: 0;
 }
@@ -247,7 +269,7 @@ input {
 
 .bintang p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -401,7 +423,6 @@ input {
 .slider {
     position: relative;
     width: 80%;
-
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -431,14 +452,14 @@ input {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(206, 206, 206, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #19B65B;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 5%;
+    height: 8%;
 }
 
 .slider button.prev {
@@ -596,3 +617,88 @@ footer p {
 .info-footer a {
     text-decoration: none;
 }
+
+@media (max-width: 600px){
+
+    .container-kamar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section {
+        margin: 0;
+        padding: 0;
+    } 
+
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 80%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 10px 50px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .nav-ul ul {
+        list-style: none;
+        display: none;
+        
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .nav-ul ul.active {
+        position: fixed;
+        top: 55px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #19B65B;
+    }
+
+    .nav-ul li {
+        text-align: center;
+        
+        margin: 0;
+        padding: 0 ;
+    }
+
+    .nav-ul a {
+        font-size: 80%;
+        color: #ffffff;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .container-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+
+}
+    
